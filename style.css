@@ -42,15 +42,18 @@ button {
   font-weight: bold;
   
   border: 0px;
-  padding: 10px 20px;
+  padding: 5px 15px;
   border-radius: 4px;
 
   width: 100px;
+  
+  cursor: pointer;
 }
 
 #container-1,
 #container-2,
-#container-3 {
+#container-3, 
+#container-4 {
   min-height: 400px;
   flex: 1; 
 }
@@ -105,7 +108,9 @@ button {
 .hero-content .text,
 .header ul,
 a:visited,
-.hero .img .text{
+.hero .img .text,
+#container-4 .subtext,
+.footer {
   font-size: 18px;
   color: #E5E7EB;
 }
@@ -179,8 +184,6 @@ a:visited,
   margin: 0px;
 
   width: 600px;
-
-
 }
 
 #container-3 .text {
@@ -190,3 +193,52 @@ a:visited,
   color: #1F2937;
 }
 
+#container-4 {
+  width: 100%;
+  box-sizing: border-box;  
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; 
+  alignt-items: center;
+}
+
+#container-4 .content-1 {
+  flex: 1;
+  padding: 0px 100px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#container-4 .content-2 {
+  background-color: #3882F6;
+  width: 60%;
+  min-width: 600px;
+  padding: 20px 50px;
+  border-radius: 10px;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+#container-4 button {
+  border: 2px solid #F9FAF8;
+}
+
+#container-4 .title {
+  color: #F9FAF8;
+  font-weight: bold; 
+  font-size: 22px;
+}
+.footer {
+  height: 80px;  
+  background-color: #1F2937;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
